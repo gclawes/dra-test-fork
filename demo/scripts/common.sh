@@ -23,10 +23,10 @@
 SCRIPTS_DIR="$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)"
 
 # The name of the example driver
-: ${DRIVER_NAME:=dra-example-driver}
+: ${DRIVER_NAME:=dra-test-fork}
 
 # The registry, image and tag for the example driver
-: ${DRIVER_IMAGE_REGISTRY:="registry.k8s.io/dra-example-driver"}
+: ${DRIVER_IMAGE_REGISTRY:="ghcr.io/gclawes"}
 : ${DRIVER_IMAGE_NAME:="${DRIVER_NAME}"}
 : ${DRIVER_IMAGE_TAG:="$(helm show chart $(git rev-parse --show-toplevel)/deployments/helm/${DRIVER_NAME} | sed -n 's/^appVersion: //p')"}
 : ${DRIVER_IMAGE_PLATFORM:="ubuntu22.04"}
