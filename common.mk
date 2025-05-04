@@ -14,8 +14,8 @@
 
 GOLANG_VERSION ?= 1.23.1
 
-DRIVER_NAME := dra-example-driver
-MODULE := sigs.k8s.io/$(DRIVER_NAME)
+DRIVER_NAME := dra-fork-test
+MODULE := github.com/gclawes/$(DRIVER_NAME)
 
 VERSION  ?= v0.1.0
 vVERSION := v$(VERSION:v%=%)
@@ -27,6 +27,6 @@ PLURAL_EXCEPTIONS  = DeviceClassParameters:DeviceClassParameters
 PLURAL_EXCEPTIONS += GpuClaimParameters:GpuClaimParameters
 
 ifeq ($(IMAGE_NAME),)
-REGISTRY ?= registry.example.com
+REGISTRY ?= ghcr.io/gclawes
 IMAGE_NAME = $(REGISTRY)/$(DRIVER_NAME)
 endif
