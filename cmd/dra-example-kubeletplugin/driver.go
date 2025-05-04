@@ -27,7 +27,7 @@ import (
 
 	drapbv1 "k8s.io/kubelet/pkg/apis/dra/v1beta1"
 
-	"sigs.k8s.io/dra-example-driver/pkg/consts"
+	"github.com/gclawes/dra-fork-test/pkg/consts"
 )
 
 var _ drapbv1.DRAPluginServer = &driver{}

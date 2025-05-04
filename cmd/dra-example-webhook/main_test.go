@@ -33,8 +33,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	configapi "sigs.k8s.io/dra-example-driver/api/example.com/resource/gpu/v1alpha1"
-	"sigs.k8s.io/dra-example-driver/pkg/consts"
+	configapi "github.com/gclawes/dra-fork-test/api/example.com/resource/gpu/v1alpha1"
+	"github.com/gclawes/dra-fork-test/pkg/consts"
 )
 
 func TestReadyEndpoint(t *testing.T) {

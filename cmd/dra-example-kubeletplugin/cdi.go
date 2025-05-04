@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"sigs.k8s.io/dra-example-driver/pkg/consts"
+	"github.com/gclawes/dra-fork-test/pkg/consts"
 
 	cdiapi "tags.cncf.io/container-device-interface/pkg/cdi"
 	cdiparser "tags.cncf.io/container-device-interface/pkg/parser"

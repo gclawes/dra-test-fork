@@ -28,8 +28,8 @@ import (
 	coreclientset "k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	"sigs.k8s.io/dra-example-driver/pkg/consts"
-	"sigs.k8s.io/dra-example-driver/pkg/flags"
+	"github.com/gclawes/dra-fork-test/pkg/consts"
+	"github.com/gclawes/dra-fork-test/pkg/flags"
 )
 
 const (

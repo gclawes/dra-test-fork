@@ -1,4 +1,4 @@
-module sigs.k8s.io/dra-example-driver
+module github.com/gclawes/dra-fork-test
 
 go 1.23.1
 

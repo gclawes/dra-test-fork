@@ -34,9 +34,9 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/klog/v2"
 
-	configapi "sigs.k8s.io/dra-example-driver/api/example.com/resource/gpu/v1alpha1"
-	"sigs.k8s.io/dra-example-driver/pkg/consts"
-	"sigs.k8s.io/dra-example-driver/pkg/flags"
+	configapi "github.com/gclawes/dra-fork-test/api/example.com/resource/gpu/v1alpha1"
+	"github.com/gclawes/dra-fork-test/pkg/consts"
+	"github.com/gclawes/dra-fork-test/pkg/flags"
 )
 
 var (
